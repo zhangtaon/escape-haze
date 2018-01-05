@@ -104,7 +104,6 @@ $(function(){
         var powerMaxVal = power.get(0).offsetHeight;
         powerVal = ((powerMaxVal-power.get(0).offsetTop)/powerMaxVal).toFixed(2)*100;
         jumpNumber = Math.round(10000*powerVal/1000)*10;
-        data["jumpNumber"] = jumpNumber;
 //        console.log("powerMaxVal.....powerMaxVal....:",powerVal+"%",jumpNumber);
     };
     //people起跳动画回调方法
@@ -151,6 +150,7 @@ $(function(){
             ableJumpBtn();
             effectStatus[0]=true;
             resetPower();
+
         };
         setTimeout(step2,600);
         setTimeout(step3,1000);
@@ -179,7 +179,7 @@ $(function(){
             //隐藏影子
             $(".page3_bg_disc").css("display","none");
         }else{
-            showDialog(jumpNumber>6999);
+            showDialog();
             peoDrop();
         }
     };
@@ -198,7 +198,6 @@ $(function(){
     };
     //弹框显示结果
     var showDialog = function(flag){
-        data["status"] = flag;
         if(flag){
             $(".h_meter").eq(0).text(jumpNumber);
             $(".success_dialog").css("display","block");
