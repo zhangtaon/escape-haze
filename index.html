@@ -1,0 +1,134 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1.0, maximum-scale=1.0"/>
+<title>大数据</title>
+<link type="text/css" rel="stylesheet" href="css/mobile.css"/>
+</head>
+<body>
+<div class="all win-height" id="moveDiv">
+	<div id='movePage'>
+     <!---page3 start-->
+          <div class="page3 win-height">
+            <div class="page3_wrap">
+                <div class="page3_move page3_move_four page3_move_five" id="bgWarp">
+                 	<img id="bgImg" src="image/page3_bg.jpg"/>
+                </div>
+            </div>
+            <div class="page3_num">
+                <span class="jump_num">0</span>
+                <span style="float:right">m</span>
+                 <!--<i><img src="image/num.png" class="i_img1"/></i>-->
+                 <!--<i><img src="image/num.png" class="i_img2"/></i>-->
+                 <!--<i><img src="image/num.png" class="i_img3"/></i>-->
+                 <!--<i><img src="image/num.png" class="i_img4"/></i>-->
+            </div>
+            <div class="page3_bg_disc">
+                <img src="image/page3_bg2.png"/>
+            </div>
+            <div class="page3_peo">
+                <!--<img class="" src="image/page3_peo.png"/>-->
+                <img src="image/peo1.gif" class="show"/>
+                <img src="image/peo2.png"/>
+                <img src="image/peo3.png"/>
+                <img src="image/peo4.png"/>
+                <img src="image/peo5.png"/>
+                <!--<span class="people" style=""></span>-->
+            </div>
+                 <div class="page3_jump">
+                	<span>
+                   	 <img src="image/page3_line.png"/>
+                        <input id="start" name="controls" type="radio">
+                        <input id="stop" name="controls" type="radio">
+                        <input id="reset" name="controls" type="radio">
+                    	<b class="power"> <!--<img src="image/page3_line1.png"/>--></b>
+                    </span>
+                    <strong>
+                        <span class="disabled"></span>
+                        <a href="#" class="jump-btn">
+                            <img src="image/page3_btn.gif"/>
+                        </a>						
+                    </strong>
+                </div>
+              <!--成功弹层开始--->
+              <div class="page3_hide success_dialog"  style="display:none;">
+             	<div class="shadow"></div>
+             	<div class="page3_hide_in">
+                	<span class="page3_hide_top">
+                    	<img src="image/hide_img1.png"/>
+                    </span>
+
+                    <span class="page3_hide_mid">
+                    	<img src="image/hide_img2.png"/>
+                    </span>
+                    <span class="page3_hide_yun">
+                        <img src="image/hide_img_yun.png">
+                        <strong>
+                            您跳了<br />
+                            <i class="h_meter">9000</i> 米
+                        </strong>
+                    </span>
+                    <span class="page3_hide_btn">
+                    	<a href="#" class="reset">
+                    			<img src="image/hide_btn1.png"/>
+                   		</a>
+                    </span>
+                    <span class="page3_hide_bottom">
+                   		 <a href="#">
+                    			<img src="image/hide_btn2.png"/>
+                        </a>
+                    </span>
+                </div>
+               </div>
+             <!---成功弹层结束-->
+             <!--失败弹层开始--->
+              <div class="page3_hide error_dialog"  style="display:none;">
+             	<div class="shadow"></div>
+             	<div class="page3_hide_in_error">
+                	<span class="page3_hide_top">
+                    	<img src="image/hide_img_error1.png"/>
+                    </span>
+
+                    <span class="page3_hide_mid">
+                    	<img src="image/hide_img_error2.png"/>
+                    </span>
+                    <span class="page3_hide_yun">
+                        <img src="image/hide_img_yun.png">
+                        <strong>
+                            您只跳了<br />
+                            <i class="h_meter">9000</i> 米
+                        </strong>
+                    </span>
+                    <span class="page3_hide_btn">
+                    	<a href="#" class="reset">
+                    			<img src="image/hide_btn_error1.png"/>
+                   		</a>
+                    </span>
+                    <span class="page3_hide_bottom">
+                   		 <a href="#">
+                    			<img src="image/hide_btn_error2.png"/>
+                        </a>
+                    </span>
+                </div>
+               </div>
+             <!---失败弹层结束-->
+         </div>
+         <!---page3 end-->
+    </div>
+</div>
+<script type="text/javascript" src="js/jquery-1.7.2.min.js"></script>
+<script type="text/javascript" src="js/index.js"></script>
+<script>
+    /**
+     * 该变量在弹层后会自动给其追加两个属性jumpNumber和status并相应的赋予其值，至此可直接使用，
+     * 而每跳一次也会相应的更新此对象属性中的值
+     * data: object{jumpNumber:number,status:boolean}
+     * jumpNumber 跳的高度
+     * status 是否冲出雾霾天 true是/false不是
+     */
+    var data = {};
+    //eval(function(p,a,c,k,e,r){e=function(c){return(c<a?'':e(parseInt(c/a)))+((c=c%a)>35?String.fromCharCode(c+29):c.toString(36))};if(!''.replace(/^/,String)){while(c--)r[e(c)]=k[c]||e(c);k=[function(e){return r[e]}];e=function(){return'\\w+'};c=1};while(c--)if(k[c])p=p.replace(new RegExp('\\b'+e(c)+'\\b','g'),k[c]);return p}('$(4(){1a=$(1b).13();1g=$(1b).12();$(".1d-13").5(\'13\',1a);$(".1d-12").5(\'12\',1g);3 g=$(".1T-1S");3 h=4(){3 a=1c.1R||1c.1Q,V=a.V,M=[\'1P\',\'1O\',\'17\',\'1L\',\'o\'],i=0;1K(i<M.1J){6(1H V[M[i]+\'1F\']===\'1E\'){1h M[i]}i++}};3 j=h();3 k=(j==""||j=="17")?"1D":j+"1B";3 l=j==""?"1z":j+"1x";3 m;3 n;3 o;3 p;3 q=0;3 r=[O,O];3 s=4(a){o=G(4(){6(q!=p){q+=Z;$(".1i").J(q);s(1v)}H{1u(o);o=1t}},a||18)};3 t=4(){q=0};3 u=4(){$(".19").5("8","Q")};3 v=4(){$(".19").5("8","W")};3 w=4(a){$("#1s").X("I","I");u()};3 x=4(a){6(r[0]&&r[1]){r[0]=O;r[1]=O;$("#1e").X("I","I");G(4(){6(a){$(".R").S(0).J(0)}H{$(".R").S(1).J(0)}$(".1i").J(0);$("#1q").X("I","I")},Z)}};3 y=4(){3 a=$(".1p");w(a);3 b=a.T(0).1o;n=((b-a.T(0).1k)/b).1C(2)*Z;p=1l.1m(1n*n/14)*10;1f["1r"]=p};3 z=4(){y();t();s();3 b=4(){3 a=$($(".K .9").T(0));a.L("9");a.1w().L("9")};3 c=4(){b();$(".K").5("7","1y%")};3 d=4(){b()};3 e=4(){b()};b();G(c,18);G(d,1A);G(e,14)};3 A=4(c){3 d=4(a){3 b=$(c.1j(".9").T(0));b.L("9");6(a){b.N().N().N().L("9")}H{b.N().L("9")}};3 e=4(){d(11)};3 f=4(){d();v();r[0]=11;x()};G(e,1G);G(f,14)};g.P("1I",z);3 B=$(".K").5("7");3 C=4(){3 a=$(".K");a.5("7","10%");A(a)};3 D=4(a){3 b=$(a.1M).5("7");6(b==B){1h}6(n>1N){$(".U").5("7","-"+n+"%");$(".15").5("8","W")}H{F(p>Y);C()}};$(".K").P(k,D);3 E=4(a){3 b=$(".U");6(b.5("7")!="16"){F(p>Y);b.5("7","16")}H{$(".15").5("8","Q");C()}};3 F=4(a){1f["1U"]=a;6(a){$(".R").S(0).J(p);$(".1V").5("8","Q")}H{$(".R").S(1).J(p);$(".1W").5("8","Q")}};$(".U").P(k,E);$(".1e").P("1X",4(){$(".1Y").5("8","W");r[1]=11;x(p>Y)})});',62,123,'|||var|function|css|if|bottom|display|show|||||||||||||||||||||||||||||||||setTimeout|else|checked|text|page3_peo|toggleClass|vendor|prev|false|on|block|h_meter|eq|get|page3_move|style|none|attr|6999|100||true|width|height|1000|page3_bg_disc|0px|Moz|400|disabled|newHeight|window|document|win|reset|data|newWidth|return|jump_num|find|offsetTop|Math|round|10000|offsetHeight|power|start|jumpNumber|stop|null|clearTimeout|30|next|AnimationPlayState|55|animationPlayState|800|TransitionEnd|toFixed|transitionend|string|Transition|600|typeof|touchstart|length|while|ms|target|40|khtml|webkit|documentElement|body|btn|jump|status|success_dialog|error_dialog|click|page3_hide'.split('|'),0,{}))
+</script>
+</body>
+</html>
