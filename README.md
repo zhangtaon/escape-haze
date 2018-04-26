@@ -1,4 +1,5 @@
 # H5活动  
-[跳出雾霾天](https://zhangtaon.github.io/escape-haze/){:target="_blank"}
+
+<a href="https://zhangtaon.github.io/escape-haze/" target="_blank">跳出雾霾天</a> 
 
 jquery 
